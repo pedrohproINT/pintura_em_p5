@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calçadão de Coapacabana - p5*js</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .top-image {
+      max-width: 400px;
+      width: auto;
+      height: auto;
+      margin: 20px auto;
+      display: block;
+    }
+    .sketch-row {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .sketch-container {
+      flex: 0;
+    }
+  </style>
+</head>
+<body>
+  <img
+    class="top-image"
+    src="images/calcadao.jpg"
+    alt="Calçadão"
+  />
+  <div class="sketch-row">
+    <div id="p5_static" class="sketch-container"></div>
+    <div id="p5_wave"   class="sketch-container"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>
